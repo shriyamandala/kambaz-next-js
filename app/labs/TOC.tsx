@@ -27,7 +27,7 @@ export default function TOC() {
         </a>
       </li>
       <li>
-        <Link href="https://github.com/shriyamandala/kambaz-next-js">Shriya Mandala: learning to build the web one lab at a time</Link>
+        <Link href="https://github.com/shriyamandala/kambaz-next-js" id ="wd-my-link">Shriya Mandala: learning to build the web one lab at a time</Link>
         
       </li>
       <li>
