@@ -13,16 +13,22 @@ export default function AnchorTag() {
       </a>
       
       <br />
-      The website I visit very often 
+      The website I visit very often{" "} 
       <a href="https://www.youtube.com/" id="wd-your-link">
          Youtube.
       </a>
       
       <br />
-      My linkedin profile is 
-      <a href="https://www.linkedin.com/in/shriya-mandala-838b68281/" id="wd-your-link" target="_blank"
+      My linkedin profile is{" "} 
+      <a href="https://www.linkedin.com/in/shriya-mandala-838b68281/" id="wd-your-linkedin" target="_blank"
         rel="noreferrer">
          ShriyaMandala.
+      </a>
+      <br />
+      My github profile is{" "} 
+      <a href="https://github.com/shriyamandala" id="wd-your-github" target="_blank"
+        rel="noreferrer">
+         ShriyaMandalaGit.
       </a>
       <br />
       Reference:{" "}

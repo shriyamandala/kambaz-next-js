@@ -20,8 +20,10 @@ export default function CourseCard({
           <h5>{title}</h5>
           <p className="wd-dashboard-course-title">{subtitle}</p>
           <button type="button">Go</button>
+          
         </div>
       </Link>
+      < br />
     </div>
   );
 }
