@@ -1,18 +1,19 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import { FaUserCircle } from "react-icons/fa";
 import * as db from "../../../../database";
+import { useEnrollmentsStore } from "../../../../store/enrollmentsStore";
+import { emptyUser } from "../../../../account/AccountContext";
 
-export default async function PeopleTable({
-  params,
-}: {
-  params: Promise<{ cid: string }>;
-}) {
-  const { cid } = await params;
-  const { users, enrollments } = db;
-  const enrolled = users.filter((usr) =>
-    enrollments.some(
-      (enrollment) => enrollment.user === usr._id && enrollment.course === cid,
-    ),
+export default function PeopleTable() {
+  const { cid } = useParams<{ cid: string }>();
+  const allEnrollments = useEnrollmentsStore((state) => state.enrollments);
+  const enrollments = allEnrollments.filter((e) => e.course === cid);
+  const enrolled = db.users.filter((usr) =>
+    enrollments.some((e) => e.user === usr._id),
   );
+  void emptyUser;
   return (
     <div id="wd-people-table" className="overflow-x-auto">
       <table className="w-full border-collapse text-left text-sm">

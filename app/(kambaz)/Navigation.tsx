@@ -108,7 +108,7 @@ import { usePathname } from "next/navigation";
 
 const LINKS = [
   { label: "Dashboard", path: "/dashboard", icon: AiOutlineDashboard },
-  { label: "Courses", path: "/courses", icon: LiaBookSolid },
+  { label: "Courses", path: "/dashboard", icon: LiaBookSolid },
   { label: "Calendar", path: "/calendar", icon: IoCalendarOutline },
   { label: "Inbox", path: "/inbox", icon: FaInbox },
   { label: "Labs", path: "/labs", icon: LiaCogSolid },
